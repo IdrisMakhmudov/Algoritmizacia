@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int a,b,c;
+cin>>a>>b>>c;
+int dia[3]={a,b,c};
+cout<<"V diaposone: ";
+for(int i=0; i<=2; i++)
+{
+if(dia[i]>2&&dia[i]<5)
+cout<<dia[i]<<' ';
+}
+cout<<"\nNa granice: ";
+for(int j=0; j<=2; j++)
+{
+if(dia[j]==2||dia[j]==5)
+cout<<dia[j]<<' ';
+}
+cout<<"\nVne granici: ";
+for(int k=0; k<=2; k++)
+{
+if(dia[k]<2||dia[k]>5)
+cout<<dia[k]<<' ';
+}
+return 0;
+}

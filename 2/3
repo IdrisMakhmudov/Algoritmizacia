@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int N;
+cin>>N;
+if(N<=100)
+{
+cout<<N<<' ';
+if(N>10&&N<15) cout<<"let";
+else
+{
+if(N%10==1) cout<<"god";
+if(N%10>1&&N%10<5) cout<<"goda";
+if(N%10>4||N%10==0) cout<<"let";
+}
+}
+else
+cout<<"Invalid values";
+return 0;
+}

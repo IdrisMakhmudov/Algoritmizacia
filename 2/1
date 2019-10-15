@@ -5,36 +5,23 @@ using namespace std;
 int main()
 {
 double a,b,c,min,max;
+int i,j;
+i=0;
+j=0;
 cin>>a>>b>>c;
-if (a>b)
+double dia[3]={a,b,c};
+do
 {
-if(a>c)
+max=dia[i];
+i++;
+}
+while(max<a||max<b||max<c);
+do
 {
-max=a;
-if(b>c) min=c
-else
-min=b;
+min=dia[j];
+j++;
 }
-else
-{
-max=c;
-min=b;
-}
-}
-else
-{
-if(b>c)
-{
-max=b;
-if(c>a) min=a;
-else min=c;
-}
-else
-{
-max=c;
-min=a;
-}
-}
-cout<<"Max= "<<max<<endl<<"Min= "<<min;
+while(min>a||min>b||min>c);
+cout<<"Max = "<<max<<endl<<"Min = "<<min;
 return 0;
 }
