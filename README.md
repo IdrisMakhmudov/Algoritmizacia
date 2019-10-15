@@ -1,0 +1,2 @@
+# Algoritmizacia
+Jest'
